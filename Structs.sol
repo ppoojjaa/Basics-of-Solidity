@@ -16,8 +16,8 @@ contract tryingStructs{
         // newNFTs.name = _name;
         // newNFTs.dna =_dna;
         // arr.push(newNFTs);
-        NFTs memory newNFTs = NFTs(_name,_dna);
-        arr.push(newNFTs);
+        NFTs memory newNFTs = NFTs(_name,_dna); // memory variable
+        arr.push(newNFTs); //pushed on the blockchain storage
     }
 
     function getNFTName(uint _id) public view returns(string memory){
